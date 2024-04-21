@@ -46,9 +46,9 @@ const router = createBrowserRouter([
         }),
       },
       {
-        path: 'tasks',
+        path: 'publishers',
         lazy: async () => ({
-          Component: (await import('./pages/tasks')).default,
+          Component: (await import('./pages/publishers')).default,
         }),
       },
       {
@@ -58,9 +58,9 @@ const router = createBrowserRouter([
         }),
       },
       {
-        path: 'users',
+        path: 'authors',
         lazy: async () => ({
-          Component: (await import('@/components/coming-soon')).default,
+          Component: (await import('@/pages/authors')).default,
         }),
       },
       {
